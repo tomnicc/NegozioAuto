@@ -29,7 +29,7 @@ public class Catalogo {
         Yaris.setCavalli(80);
         Catalogo.add(Yaris);
         for (autoBase a : Catalogo) {
-            System.out.println(a.getMarca() +" "+ a.getModello() +" "+a.alimentazione);
+            System.out.println(a.getMarca() +" "+ a.getModello() +" "+a.getAlimentazione()+" "+a.getColore()+" "+a.getCavalli());
         }
        
         }
