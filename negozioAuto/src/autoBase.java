@@ -3,7 +3,7 @@ public class autoBase {
     int cavalli;
 
     //metodi setter
-    public void setNome(String marca){
+    public void setMarca(String marca){
         this.marca=marca;
     }
     public void setModello(String modello){
@@ -21,5 +21,17 @@ public class autoBase {
     //metodi getter
     public String getMarca(){
         return marca;
+    }
+    public String getModello(){
+        return modello;
+    }
+    public String getColore(){
+        return colore;
+    }
+    public String getAlimentazione(){
+        return alimentazione;
+    }
+    public int getCavalli(){
+        return cavalli;
     }
 }
