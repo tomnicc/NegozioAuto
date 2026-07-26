@@ -2,9 +2,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Catalogo {
+    static List<autoBase> Catalogo;
     //Creazione del catalogo (lista)
     static void Creacatalogo(){
-        List<autoBase> Catalogo = new ArrayList<>();
+        Catalogo= new ArrayList<>();
         autoBase Lanciay =new autoBase();
         Lanciay.setMarca("Lancia");
         Lanciay.setModello("Y");
@@ -28,12 +29,14 @@ public class Catalogo {
         Yaris.setColore("Grigio");
         Yaris.setCavalli(80);
         Catalogo.add(Yaris);
-        for (autoBase a : Catalogo) {
-            System.out.println(a.getMarca() +" "+ a.getModello() +" "+a.getAlimentazione()+" "+a.getColore()+" "+a.getCavalli());
-        }
        
         }
         
+    static void StampaCatalogo(){
+        for (autoBase a : Catalogo) {
+            System.out.println(a.getMarca() +" "+ a.getModello() +" "+a.getAlimentazione()+" "+a.getColore()+" "+a.getCavalli());
+        }
+    }
     
         
 }
