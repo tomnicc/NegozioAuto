@@ -30,8 +30,10 @@ public class Catalogo {
         Yaris.setCavalli(80);
         Catalogo.add(Yaris);
        
-        Autousata usato = new Autousata();
-        usato.setMarca("Autobianchi");
+        Autousata usato =new Autousata();
+        usato.setMarca("Fiat");
+        
+
         }
         
     static void StampaCatalogo(){
