@@ -1,6 +1,6 @@
 public class autoBase {
-    private  String marca, modello,colore,alimentazione;
-    private  int cavalli;
+     String marca, modello,colore,alimentazione;
+      int cavalli;
 
     //metodi setter
     public void setMarca(String marca){
