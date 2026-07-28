@@ -1,3 +1,4 @@
+import java.time.Year;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,13 +32,24 @@ public class Catalogo {
         Catalogo.add(Yaris);
        
         Autousata usato =new Autousata();
-        usato.setMarca("Fiat");
-        
+        usato.setMarca("Autobianchi");
+        usato.setModello("Y10");
+        usato.setAlimentazione("Benzina super");
+        usato.setColore("nero");
+        usato.setCavalli(45);
+        usato.setAnnoDiImmatricolazione(Year.of(1993));
+        usato.setChilometri(100000);
+        Catalogo.add(usato);
+
+
 
         }
         
     static void StampaCatalogo(){
         for (autoBase a : Catalogo) {
+            if(a instanceof Autousata)
+                System.out.println(a.getMarca() +" "+ a.getModello() +" "+a.getAlimentazione()+" "+a.getColore()+" "+a.getCavalli()+" "+((Autousata) a).getAnnoDiImmatricolazione()+" "+((Autousata) a).getChilometri());
+            else
             System.out.println(a.getMarca() +" "+ a.getModello() +" "+a.getAlimentazione()+" "+a.getColore()+" "+a.getCavalli());
         }
     }
